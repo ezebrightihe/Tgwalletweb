@@ -1,0 +1,16 @@
+@import url("https://fonts.googleapis.com/css2?family=Open+Sans:wght@300;400;500;700;800&family=Roboto:wght@100;300;400;500;700;900&display=swap");
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: "Open Sans", sans-serif;
+} 
+.errorMessage {
+  font-size: 1.1em;
+  color: red;
+  display: inline-block;
+}
+
+.btn {
+  background: #40196d;
+}

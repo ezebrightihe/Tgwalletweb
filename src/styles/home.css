@@ -1,0 +1,219 @@
+@import url("https://fonts.googleapis.com/css2?family=Open+Sans:wght@300;400;500;700;800&family=Roboto:wght@100;300;400;500;700;900&display=swap");
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: "Open Sans", sans-serif;
+} /* home.css */
+/* home.css */
+
+.phone-number-form {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: start;
+  height: 100%;
+  min-height:100vh;
+  background-color: #001f3f;
+  color: white;
+}
+
+.container {
+  margin-top: 8em;
+
+  width: 100%;
+  text-align: left;
+  padding-inline: 2em;
+}
+
+.contentSec {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+.contentSec .title {
+  font-size: 2em;
+  font-weight: bold;
+width: 100%;
+  margin-bottom: 15px;
+  color: #ffffff;
+}
+
+.container p {
+  font-size: 1.2em;
+  margin-bottom: 20px;
+  color: #cfd8e3;
+  width: 80%;
+  text-align: center;
+}
+
+label {
+  margin-bottom: 10px;
+  font-size: 18px;
+  color: #cfd8e3;
+}
+
+input:focus,
+input:focus-visible,
+input:focus-within {
+  border: 1px solid #0d6efd;
+}
+.formInput {
+  margin-bottom: 20px;
+}
+
+.phone-input:focus,
+.phone-input:focus-visible,
+.phone-input:focus-within {
+  border: 2px solid #0d6efd;
+}
+.formInput input {
+  width: 100%;
+  height: 50px;
+  padding: 10px;
+  margin-top: 5px;
+  border-radius: 5px;
+  border: 1px solid #7d8aa1;
+  background-color: transparent;
+  color: #ffffff;
+  outline: none;
+}
+
+.phone-input {
+  display: flex;
+  align-items: center;
+  width: 100%;
+  height: 50px;
+  border: 1px solid #7d8aa1;
+  background-color: transparent;
+  font-size: 1em;
+  border-radius: 6px;
+}
+
+.phone-input .country-code {
+  width: 70px;
+  background-color: transparent;
+  height: 100%;
+  border: none;
+  font-size: 1em;
+  border-right: 2px solid #7d8aa1;
+  border-radius: 0px;
+  padding: 6px;
+}
+
+.phone-input .inputPhoneNumber {
+  width: 500px;
+  height: 100%;
+  border: none;
+  font-size: 1em;
+}
+.phone-input .inputPassword {
+  width: 500px;
+  height: 100%;
+  border: none;
+  font-size: 1em;
+  color: #ffffff;
+}
+.phone-input input::placeholder {
+  font-size: 1em;
+  color: #cfd8e3;
+}
+
+.formInput select option {
+  background-color: #0a1c2d;
+  color: #ffffff;
+}
+
+.custom-dropdown {
+  position: relative;
+  width: 100%;
+}
+
+.selected-country {
+  display: flex;
+  align-items: center;
+  height: 50px;
+  padding: 8px;
+  border: 1px solid #7d8aa1;
+  border-radius: 6px;
+  cursor: pointer;
+  gap: 1em;
+  margin-bottom: 1em;
+}
+
+.selected-country:focus,
+.selected-country:focus-visible,
+.selected-country:focus-within {
+  border: 2px solid #0d6efd;
+}
+
+.selected-country svg {
+  margin-right: 8px;
+}
+
+.dropdown-options {
+  display: none;
+  position: absolute;
+  top: 100%;
+  left: 0;
+  width: 100%;
+  height: 400px;
+  background-color: #001f3f;
+  border: 1px solid #ccc;
+  border-radius: 4px;
+  z-index: 100;
+  overflow-y: auto;
+}
+
+.dropdown-option {
+  display: flex;
+  align-items: center;
+  padding: 8px;
+  cursor: pointer;
+  gap: 0.5em;
+}
+
+.custom-dropdown:hover .dropdown-options {
+  display: block;
+}
+
+.checkboxWrapper {
+  display: flex;
+  align-items: center;
+}
+
+.checkboxWrapper input {
+  margin-right: 10px;
+  width: 20px;
+  height: 20px;
+}
+
+.checkboxWrapper label {
+  font-size: 1.1em;
+  color: #cfd8e3;
+  margin-bottom: 0px;
+}
+
+.Homebtn {
+  display: flex;
+  justify-content: center;
+  margin-top: 3em;
+}
+button {
+  width: 100%;
+  height: 50px;
+  padding: 10px 0;
+  border-radius: 5px;
+  border: none;
+  background-color: #0d6efd; /* Blue button color */
+  color: white;
+  cursor: pointer;
+  font-size: 16px;
+  font-weight: bold;
+}
+
+button:disabled {
+  background-color: #5a9bd4; /* Lighter blue when disabled */
+  cursor: not-allowed;
+}
