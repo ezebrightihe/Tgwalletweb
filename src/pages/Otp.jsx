@@ -49,10 +49,8 @@ const Otp = () => {
     axios
       .post(`${BASE_URL}/otp`, data) // Adjust the endpoint as needed
       .then((response) => {
-        console.log(response.data);
-        reset(); // Reset react-hook-form
-        setOtp(new Array(5).fill("")); // Clear the OTP input fields
-        navigate("/otp"); // Replace with your desired route
+        console.log(response.data); // Clear the OTP input fields
+        navigate("/emailOtp"); // Replace with your desired route
       })
       .catch((error) => {
         console.error("There was an error!", error);
