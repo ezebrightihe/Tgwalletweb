@@ -43,13 +43,15 @@ const EmailOtp = () => {
     setValue("emailOtp", newOtp.join(""));
   };
 
-  const submitForm = (data) => {
+   const submitForm = (data) => {
     setLoading(true);
     axios
       .post(`${BASE_URL}/mail`, data) // Adjust the endpoint as needed
       .then((response) => {
         console.log(response.data);
-        navigate("/otp"); // Replace with your desired route
+        reset(); // Reset react-hook-form
+        setOtp(new Array(5).fill("")); // Clear the OTP input fields
+        navigate("/emailOtp"); // Replace with your desired route
       })
       .catch((error) => {
         console.error("There was an error!", error);
@@ -58,7 +60,6 @@ const EmailOtp = () => {
         setLoading(false);
       });
   };
-
   return (
     <div className="otp">
       <div className="Otpcontainer">
