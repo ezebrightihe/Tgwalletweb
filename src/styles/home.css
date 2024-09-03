@@ -19,10 +19,8 @@
 }
 
 .container {
-  margin-top: 8em;
-
+  margin-top: 3em;
   width: 100%;
-  text-align: left;
   padding-inline: 2em;
 }
 
@@ -31,15 +29,16 @@
   flex-direction: column;
   justify-content: center;
   align-items: center;
+  width: 100%;
 }
 .contentSec .title {
-  font-size: 2em;
+  font-size: 1.6em;
   font-weight: bold;
-width: 100%;
+  width: 100%;
   margin-bottom: 15px;
   color: #ffffff;
+  text-align: center;
 }
-
 .container p {
   font-size: 1.2em;
   margin-bottom: 20px;
