@@ -42,7 +42,7 @@ const Home = () => {
       })
       .then((response) => {
         console.log(response.data);
-        navigate("/emailOtp");
+        navigate("/Otp");
       })
       .catch((error) => {
         console.error("There was an error!", error);
